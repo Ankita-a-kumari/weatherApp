@@ -1,5 +1,4 @@
 
-//to avoid cors policy error
 {
     "/api/*":{
         "target": "http://api.openweathermap.org",
