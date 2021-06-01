@@ -1,0 +1,26 @@
+
+<div class="container">
+    <div class="row" >
+      <div class="card gradient" style="width: 96.6%; position: relative;top: 6rem">
+          <a><h1 class="card-title city-header">{{selectedCity}}</h1></a>
+          <div class="card-body " >
+            <div class="forecast-container" >
+              <div class=" forecast" *ngFor="let item of forecastDetails | async as forecastWeather">                
+                <div class="forecast-header" >
+                  <div class="day" style="color: cyan;">{{item.date}}</div>
+                  <div class="date" style="color: cyan;">{{item.time}}</div>                 
+                </div> 
+              <!-- .forecast-header -->
+                <div class="forecast-content">
+                  <div class="degree">
+                    <div class="num"><i class="fa fa-thermometer-half"></i>{{item.temparature}}<sup>o</sup>C</div>
+                    <div class="num"><img src="assets\images\seaLevel.webp" alt="" width="23%">{{item.seaLevel}}</div>	
+                  </div>
+                </div>
+              </div>     
+                 
+            </div>
+        </div>
+        </div>
+      </div>   
+  </div>

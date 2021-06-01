@@ -1,0 +1,27 @@
+
+<div class="cities-container">
+        <div class=" card-tiles card" *ngFor ="let city of cityTiles" (click)="ViewdailyWeather(city)">
+                <div class="card-body">
+                <h5 class="card-title">{{city}}</h5>
+                </div>
+                    </div>
+                </div>
+
+              
+                <div class="dailyWeather-container row gradient" *ngIf="dailyWeatherData | async as citydata " >
+                      <a class="card-header " [routerLink]="['/forecast', citydata.name]">                  
+                    {{citydata.name}}                   
+                </a>
+                    <div class="card-body">
+                        <p class="card-text"><img style="width: 3rem" src="assets\images\temperature.webp">{{citydata.temparature}}<sup>o</sup>C</p> 
+                        <p class="card-text"><img style="width: 3rem" src="assets\images\sunrise.png">{{citydata.sunrise}}</p> 
+                        <p class="card-text"><img style="width: 3rem" src="assets\images\sunset.webp">{{citydata.sunset}} </p>    
+                    <p class="card-text" *ngIf="errorMessage" style="color: red;text-align: center">{{errorMessage}}</p>
+                    </div>
+                </div>
+
+               
+
+            
+            
+            

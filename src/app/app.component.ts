@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Routes, RouterModule, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'weatherApp';
+  constructor(private router: Router) {}
+
+  homepage() {
+    this.router.navigate(['']);// when clicked on icon navigates to home page.
+  }
 }

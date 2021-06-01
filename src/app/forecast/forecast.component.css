@@ -1,0 +1,82 @@
+.card-body-style{
+    font-size: 30px;
+    color:black;
+    font-weight: 500;
+}
+.card-body-style i {
+    width :30px;
+}
+.today-date {
+    float: right;
+    color:black;
+}
+.forecast-container {
+    width: 100%;
+    background: #323544;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 68px;
+    margin-bottom: 50px;
+}
+
+.forecast-container .forecast {
+    display: table-cell;
+    vertical-align: top;
+}
+.forecast-container .forecast .forecast-header {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+.forecast-container .forecast.today .forecast-content {
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.forecast-container .forecast .forecast-content {
+    padding: 50px 20px 10px;
+}
+.forecast-container .forecast.today .location {
+    font-size: 18px;
+    font-size: 1.2857142857em;
+    font-weight: 400;
+}
+.forecast-container .forecast .forecast-content .degree {
+    font-size: 24px;
+    font-size: 1.7142857143em;
+    color: white;
+    font-weight: 700;
+}
+.forecast-container .forecast.today .degree .num {
+    font-size: 90px;
+    font-size: 6.4285714286rem;
+    margin-right: 30px;
+}
+.forecast-container .forecast.today .degree .num, .forecast-container .forecast.today .degree .forecast-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+.forecast-container .forecast .forecast-content .forecast-icon {
+    margin-bottom: 20px;
+}
+.forecast-container .forecast .forecast-icon {
+    height: 50px;
+}
+.forecast-container .forecast:nth-child(even) {
+    background-color: #262936;
+}
+.gradient {
+    background-color: darkgrey; 
+    background-image: linear-gradient(to right,white,#48a5d2);
+    border-radius: 10px;
+}
+.city-header {
+    text-align: center;
+    top: 10px;
+    position: relative;
+    font-weight: 700;
+}

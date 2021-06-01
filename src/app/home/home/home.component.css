@@ -1,0 +1,37 @@
+
+.cities-container
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    top: 30px;
+    position: relative;
+   
+}
+
+.card-tiles {
+    width:200px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    opacity: 0.7;
+}
+.dailyWeather-container {
+    position: relative;
+    top:100px;
+  
+}
+.gradient {
+    background-color: darkgrey;
+    background-image: linear-gradient(to right,white,#48a5d2);
+    border-radius: 10px;
+}
+.card-header {
+    min-width: 168px;
+    font-size: xx-large;
+    text-align: center;
+}
+.card-title{
+    text-align: center;
+    color: #3a3737fa;
+}
